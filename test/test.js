@@ -65,14 +65,3 @@ describe('Promise All With Threshold', () => {
     }
   });
 });
-
-
-// These tests cover several scenarios, including:
-
-// The function resolves with an array of results when less than or equal to the threshold number of promises are rejected.
-// The function rejects with an error message when more than the threshold number of promises are rejected.
-// The function resolves with an empty array when no promises are provided.
-// The function resolves with an array of results when all promises are resolved.
-// The function rejects with an error message when the threshold number is negative.
-
-// You can run these tests using Mocha to ensure that your implementation of promiseAllWithThreshold behaves as expected.

@@ -1,31 +1,3 @@
-// // 1)
-
-// function promiseAllWithThreshold(arrayOfPromises, threshold) {
-//   let rejectCount = 0;
-//   const results = [];
-
-//   return new Promise((resolve, reject) => {
-//     for (let i = 0; i < arrayOfPromises.length; i++) {
-//       arrayOfPromises[i].then(
-//         (result) => {
-//           results[i] = result;
-//           if (results.length - rejectCount >= threshold) {
-//             resolve(results);
-//           }
-//         },
-//         (error) => {
-//           rejectCount++;
-//           if (rejectCount > threshold) {
-//             reject(new Error(`Too many promises rejected: ${rejectCount}`));
-//           }
-//         }
-//       );
-//     }
-//   });
-// }
-
-// 2)
-
 function promiseAllWithThreshold(arrayOfPromises, threshold) {
   let rejectedPromises = 0;
 
